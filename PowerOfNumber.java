@@ -1,7 +1,24 @@
 package com.brideglabz;
+import java.util.Scanner;
 
 public class PowerOfNumber {
     public static void main(String[] args) {
-        int base = 2 , exponenet =
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the base number ::");
+        int base = sc. nextInt();
+        int temp = base;
+        System.out.println("Enter the exponenet number ::");
+        int expo = sc. nextInt();
+
+
+        for (int i=1; i<expo; i++){
+            temp = temp*temp;
+
+        }
+
+        System.out.println("Result of "+base+" power " +expo+" is "+temp);
+
+
+
     }
 }
